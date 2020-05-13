@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="CSS/page.css">
+</head>
+<body>
+ 	<div class="wrapper" >
+ 		<div class="image">
+ 			<h2>Motorbike Color Changer</h2>
+ 			<img src="image/mr.png" id="picture">
+ 			<div class="random">
+ 				<h4>Generate Random Color</h4>
+ 				<button class="btn1" onclick="Generate()">Generate</button>
+ 			</div>
+ 			<div class="Specific">
+				 <h4>Generate Specific Color</h4>
+ 				<select id="pick"> 
+ 					<option value="blue">Blue</option>
+ 					<option value="red">Red</option>
+					 <option value="green">Green</option>
+					 <option value="black">Black</option>
+					 <option value="violet">Violet</option>
+					 <option value="pink">Pink</option>
+					 <option value="yellow">Yellow</option>
+ 				</select>
+ 				<br>
+ 				<br>
+ 				<button class="btn2" onclick="Show()">Show</button>
+ 				<button class="btn3" onclick="Reset()">Reset</button>
+ 			</div>
+ 		</div>
+ 	</div>
+</body>
+	<script>
+		function Show() {
+	if (document.getElementById('pick').value =="blue"){
+		document.getElementById('picture').style.background = "blue";
+	}
+	else if (document.getElementById('pick').value =="red"){
+		document.getElementById('picture').style.background ="red";
+	}
+	else if (document.getElementById('pick').value =="green"){
+		document.getElementById('picture').style.background = "green";
+    }
+    else if (document.getElementById('pick').value =="black"){
+		document.getElementById('picture').style.background = "black";
+	}
+	else if (document.getElementById('pick').value == "violet"){
+		document.getElementById('picture').style.background = "violet";
+	}
+	else if (document.getElementById('pick').value == "pink"){
+		document.getElementById('picture').style.background = "pink";
+	}
+	else if (document.getElementById('pick').value == "yellow"){
+		document.getElementById('picture').style.backgroundColor = "yellow";
+	}
+}
+function Reset(){
+	{
+		document.getElementById('picture').style.background = "white";
+	}
+}
+function Generate(){
+    var x = Math.floor(Math.random()* 256)+1;
+    var y = Math.floor(Math.random()* 256)+1;
+    var z = Math.floor(Math.random()* 256)+1;
+    var bgColor = "rgba("+ x + "," + y + ","+ z + ")";
+    var picture = document.querySelector("#picture");
+    picture.style.backgroundColor = bgColor;
+}
+</script>
+</html>

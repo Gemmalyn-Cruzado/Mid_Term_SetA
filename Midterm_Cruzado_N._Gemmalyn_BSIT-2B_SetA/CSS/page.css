@@ -1,0 +1,66 @@
+		body {
+			background-color: green;
+		}
+		.wrapper{
+			background-color:white;
+			margin: auto;
+			margin-top: 5%;
+			width: 40%;
+			height: 520px;
+			box-shadow:  10px 10px gray;
+			border-radius: 20px;
+			border-top-color: red;
+			font-family: courier new, courier,monospace;
+
+		
+		}
+		.image{
+			margin:auto;
+			margin-left: 4.7%;
+		
+
+		}
+		h2 {
+			text-align: center;
+			padding-top: 4%;
+		}
+		#pick {
+			border-radius: 5px;
+			width: 75px;
+			font-family: courier new, courier,monospace;
+		}
+		.random {
+			float: left;
+		}
+		.Specific {
+			float: right;
+			margin-right: 6%;
+		}
+		.btn1{
+			color: white;
+			background-color: green;
+			padding: 2%;
+			padding-right: 2%;
+			padding-left: 2%;
+			border-radius: 5px;
+			font-family: courier new, courier,monospace;
+		}
+		.btn2 {
+			color: white;
+			background-color: blue;
+			padding: 2%;
+			padding-right: 2%;
+			padding-left: 2%;
+			border-radius: 5px;
+			font-family: courier new, courier,monospace;
+		}
+		.btn3 {
+			margin-left: 3%;
+			color: white;
+			background-color: gray;
+			padding: 2%;
+			padding-right: 2%;
+			padding-left: 2%;
+			border-radius: 5px;
+			font-family: courier new, courier,monospace;
+		}
